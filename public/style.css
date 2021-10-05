@@ -1,0 +1,16 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #006DBB 0%, #00BAE3 100%);
+}
+
+canvas {
+  background: white;
+}
