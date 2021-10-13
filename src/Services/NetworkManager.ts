@@ -1,8 +1,17 @@
+import { io, Socket } from "socket.io-client";
 import { AbstractNetworkManager, IAction } from '../../../memo-draw-engine/src/index';
 
 class NetworkManager extends AbstractNetworkManager {
+  socket: Socket;
+
+  constructor() {
+    super();
+    this.socket = io('127.0.0.1:3004');
+    this.socket.on('engine', (data) => this.on(data));
+  }
+
   update(elem: IAction): void {
-    console.log(elem);
+    this.socket.emit('engine', elem);
   }
 }
 
