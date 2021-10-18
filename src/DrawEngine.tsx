@@ -12,6 +12,7 @@ function DrawEngine() {
 
   useEffect(() => {
     engine = new Engine(canvasRef.current, new NetworkManager());
+    engine.eventManager.registerDefaultCanvasAndDocumentEvents();
     drawState.shapeType = ShapeType.Pencil;
     drawState.thickness = 5;
   }, []);  
