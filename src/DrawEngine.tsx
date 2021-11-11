@@ -1,5 +1,5 @@
 import React, { CSSProperties, useEffect, useRef, useState } from 'react';
-import { Engine, drawState, ShapeType } from '../../memo-draw-engine/src/index';
+import { Engine, drawState, ShapeType } from 'memo-draw-engine';
 import ColorBar from './Components/ColorBar';
 import OpacityBar from './Components/OpacityBar';
 import ShapeBar from './Components/ShapeBar';

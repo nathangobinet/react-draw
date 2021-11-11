@@ -1,5 +1,5 @@
 import { io, Socket } from "socket.io-client";
-import { AbstractNetworkManager, IAction } from '../../../memo-draw-engine/src/index';
+import { AbstractNetworkManager, IAction } from 'memo-draw-engine';
 
 class NetworkManager extends AbstractNetworkManager {
   socket: Socket;
