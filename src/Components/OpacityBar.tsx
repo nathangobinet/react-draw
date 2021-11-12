@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { drawState } from "../../../memo-draw-engine/src";
+import { drawState } from "memo-draw-engine";
 
 function OpacityBar() {
   const [sliderValue, setSliderValue] = useState(100);

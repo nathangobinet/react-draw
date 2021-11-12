@@ -1,5 +1,5 @@
 import React from "react";
-import { drawState, ShapeType } from "../../../memo-draw-engine/src";
+import { drawState, ShapeType } from "memo-draw-engine";
 
 const shapes : Array<{ name: string, type: ShapeType }> = [
   { name: 'Pencil', type: ShapeType.Pencil },

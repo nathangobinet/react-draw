@@ -1,5 +1,5 @@
 import React from "react";
-import { drawState, Color } from "../../../memo-draw-engine/src";
+import { drawState, Color } from "memo-draw-engine";
 
 const colors : Array<Color> = [
   new Color(0, 0, 0),

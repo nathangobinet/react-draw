@@ -1,5 +1,5 @@
 import React from "react";
-import { drawState } from "../../../memo-draw-engine/src";
+import { drawState } from "memo-draw-engine";
 
 const availableThickness = [
   3, 5, 10
